@@ -1,0 +1,848 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* 
+{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+  overflow-x: hidden;
+}
+.tophead{
+  font-size: 100px;
+  color: #033770;
+  margin-left:400px;
+  font-weight: 600;
+  margin-top: 200px;
+  font-family: "Segoe UI",  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+}
+.bottomhead{
+  font-size: 100px;
+  color: #033770;;
+  margin-left:650px;
+  font-weight: 600;
+  margin-top: 10px;
+  font-family: "Segoe UI",  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+}
+.verti{
+  height: 40px; /* Set the height to define the length */
+  width: 1px; /* Set the width to create a vertical line */
+  background-color: #000; /* Set the color of the vertical line */
+  position: absolute; /* Fix the position relative to the viewport */
+  top: 10px; /* Adjust the top position as needed */
+  left: 490px; /* Adjust the left position as needed */
+  
+}
+
+.mailer{
+  text-decoration: none; /* Remove underline */
+  font-size: 20px;
+  color: #323232;
+  margin-left:0px;
+  font-family:  "Segoe UI",  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+}
+
+.mailer:hover {
+  color: #24b882; /* Change the color to red on hover */
+}
+
+.linker{
+  text-decoration: none; /* Remove underline */
+  font-size: 20px;
+  color: #323232;
+  margin-left:950px;
+  margin-top: 2px;
+  font-family: "Segoe UI",  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+}
+.linker:hover {
+  color: #24b882; /* Change the color to red on hover */
+}
+
+.l {
+  display: block;
+  margin-bottom: 1.5em;
+  font-size: 1em;
+}
+
+.l {
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 0.75em;
+  box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.3) inset;
+  color: #fdea7b;
+  display: inline-flex;
+  align-items: center;
+  margin: auto;
+  padding: 0.15em;
+  width: 3em;
+  height: 1.5em;
+  transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.l:before, .l:after {
+  content: "";
+  display: block;
+}
+
+.l:before {
+  background-color: #d7d7d7;
+  border-radius: 50%;
+  width: 1.2em;
+  height: 1.2em;
+  transition: background-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+  z-index: 1;
+}
+
+.l:after {
+  background: linear-gradient(transparent 50%, rgba(0,0,0,0.15) 0) 0 50% / 50% 100%,
+		repeating-linear-gradient(90deg,#bbb 0,#bbb,#bbb 20%,#999 20%,#999 40%) 0 50% / 50% 100%,
+		radial-gradient(circle at 50% 50%,#888 25%, transparent 26%);
+  background-repeat: no-repeat;
+  border: 0.25em solid transparent;
+  border-left: 0.4em solid #d8d8d8;
+  border-right: 0 solid transparent;
+  transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+  transform: translateX(-22.5%);
+  transform-origin: 25% 50%;
+  width: 1.2em;
+  height: 1em;
+  box-sizing: border-box;
+}
+/* Checked */
+.l:checked {
+  background-color: rgba(0,0,0,0.45);
+  box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.1) inset;
+}
+
+.l:checked:before {
+  background-color: currentColor;
+  transform: translateX(125%)
+}
+
+.l:checked:after {
+  border-left-color: currentColor;
+  transform: translateX(-2.5%) rotateY(180deg);
+}
+/* Other States */
+.l:focus {
+	/* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
+  outline: 0;
+}
+
+button {
+  margin-top: 50px;
+  margin-left: 600px;
+  padding: 20px 50px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: #033770;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+/* Styles for your custom button */
+.custom-button {
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 20px 50px;
+  border-radius: 7px;
+  border: 1px solid #20c997;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: #20c997;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  transition: all 0.2s ease-in;
+  text-decoration: none; /* Remove underline for the anchor element */
+  display: inline-block; /* Ensure the button takes the size of its content */
+}
+
+/* Add your hover and animation styles to the custom button */
+.custom-button:hover {
+  background: #20c997;
+  box-shadow: 0 0 30px 5px #20c997;
+}
+
+.custom-button:hover::before {
+  animation: sh02 0.5s 0s linear;
+}
+
+/* The rest of your styles and animations can remain the same */
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+/* Remove the box-shadow on click (active state) */
+.custom-button:active {
+  box-shadow: 0 0 0 0 transparent;
+}
+
+
+/* Styles for your custom button */
+.getstarted {
+  margin-top: 50px;
+  margin-left: 600px;
+  padding: 20px 50px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: #033770;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  transition: all 0.2s ease-in;
+  text-decoration: none; /* Remove underline for the anchor element */
+  display: inline-block; /* Ensure the button takes the size of its content */
+}
+
+/* Add your hover and animation styles to the custom button */
+.getstarted:hover {
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+}
+
+.getstarted:hover::before {
+  animation: sh02 0.5s 0s linear;
+}
+
+/* The rest of your styles and animations can remain the same */
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+/* Remove the box-shadow on click (active state) */
+.getstarted:active {
+  box-shadow: 0 0 0 0 transparent;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+#header{
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: #e8eff3;
+  box-shadow: 0px 5px 15px rgba(0,0,0, 0.06);
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#navbar{
+  display: flex;
+  margin-top: 30px;
+  margin-left: 500px;
+  
+}
+#navbar li{
+  position: relative;
+  margin-right: 40px;
+  white-space: nowrap;
+}
+#navbar li a{
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+#navbar li a:hover,
+#navbar li a.active{
+  color: #088178
+}
+#navbar li a:hover::after {
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+.card {
+  margin-left: 110px;
+  border-radius: 20px;
+  margin-top: 50px;
+  box-sizing: border-box;
+  width: 790px;
+  height: 300px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.icon-container {
+  position: absolute; /* Create a positioning context for the icon */
+  left: 100px; /* Adjust the left position */
+  top: 50px; /* Adjust the top position */
+}
+
+.carda {
+  margin-left: 950px;
+  margin-top: -300px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 690px;
+  height: 300px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+.carda:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.icontainer{
+  position: absolute; /* Create a positioning context for the icon */
+  left: 100px; /* Adjust the left position */
+  top: 50px; /* Adjust the top position */
+}
+
+.cardb {
+  margin-left: 110px;
+  border-radius: 20px;
+  margin-top: 50px;
+  box-sizing: border-box;
+  width: 790px;
+  height: 300px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+
+
+.cardb:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.cardc {
+  margin-left: 950px;
+  border-radius: 20px;
+  margin-top: -300px;
+  box-sizing: border-box;
+  width: 690px;
+  height: 300px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+
+.cardc:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.cardd {
+  margin-left: 110px;
+  border-radius: 20px;
+  margin-top: 50px;
+  box-sizing: border-box;
+  width: 790px;
+  height: 300px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+
+
+.cardd:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.carde {
+  margin-left: 950px;
+  border-radius: 20px;
+  margin-top: -300px;
+  box-sizing: border-box;
+  width: 690px;
+  height: 300px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+
+.carde:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.cardf {
+  margin-left: 110px;
+  border-radius: 20px;
+  margin-top: 50px;
+  box-sizing: border-box;
+  width: 790px;
+  height: 300px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+
+.cardf:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.cardg {
+  margin-left: 950px;
+  border-radius: 20px;
+  margin-top: -300px;
+  box-sizing: border-box;
+  width: 690px;
+  height: 300px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+
+
+.cardg:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.cardh {
+  margin-left: 110px;
+  border-radius: 20px;
+  margin-top: 50px;
+  box-sizing: border-box;
+  width: 790px;
+  height: 300px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+
+
+.cardh:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.cardi {
+  margin-left: 950px;
+  border-radius: 20px;
+  margin-top: -300px;
+  box-sizing: border-box;
+  width: 690px;
+  height: 300px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+.cardi:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+
+.portfolio-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 1500px;
+  width: 1500px;
+}
+
+.portfolio-card {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top:50px ;
+  margin-left: 100px;
+  margin-right:21px;
+}
+
+.portfolio-card-text {
+  text-align: center;
+  position: absolute;
+  padding: 20px;
+  bottom: 0;
+  transform: translateY(100%);
+  background-color: rgba(75, 75, 75, 0.747);
+  transition: 0.2s;
+  width: 100%;
+  color: white;
+}
+.portfolio-card:hover .portfolio-card-text {
+  /* bottom: 0; */
+  transform: translateY(0);
+}
+
+.portfolio-card {
+  transition: 0.2s ease;
+}
+
+.portfolio-card:hover {
+  transform: scale(1.07);
+}
+
+.ach{
+  text-align: center;
+  position: absolute;
+  padding: 20px;
+  bottom: 500;
+  background-color: rgba(75, 75, 75, 0.747);
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+
+}
+
+.enquire-button {
+  position: fixed;
+  bottom: 20px;
+  right: 60px; 
+  z-index: 9999; 
+}
+
+
+.support-card {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #50d8af;
+  border-radius: 5px;
+}
+
+.ca {
+  margin-left: 110px;
+  border-radius: 20px;
+  margin-top: 50px;
+  box-sizing: border-box;
+  width: 1500px;
+  height: 1000px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+
+
+#myInput {
+  width: 250px;
+  height: 40px;
+  position: absolute;
+  top: 200px;
+  left: 150px;
+  border: 1px solid #ccc;
+  background-color: #faf9f9;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#myInputa {
+  width: 250px;
+  height: 40px;
+  position: absolute;
+  top: 200px;
+  left: 650px;
+  border: 1px solid #ccc;
+  background-color: #faf9f9;
+  border-radius: 5px;
+  padding: 5px;
+}
+#myInputb {
+  width: 250px;
+  height: 40px;
+  position: absolute;
+  top: 400px;
+  left: 150px;
+  border: 1px solid #ccc;
+  background-color: #faf9f9;
+  border-radius: 5px;
+  padding: 5px;
+}
+#myInputc {
+  width: 250px;
+  height: 40px;
+  position: absolute;
+  top: 400px;
+  left: 650px;
+  border: 1px solid #ccc;
+  background-color: #faf9f9;
+  border-radius: 5px;
+  padding: 5px;
+}
+#myInputd {
+  width: 770px;
+  height: 340px;
+  position: absolute;
+  top: 550px;
+  left: 150px;
+  border: 1px solid #ccc;
+  background-color: #faf9f9;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.cha{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.la {
+  margin-top: -10px;
+  margin-left: 990px;
+  border-radius: 20px;
+  margin-top: 50px;
+  width: 500px;
+  height: 940px;
+  background: #75eac7;
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+}
+
+.enq{
+  position: fixed;
+  bottom: 10px;
+  right: 900px;
+  overflow: hidden; 
+  z-index: 9999; 
+}
+
+
+
+
+
+
+footer {
+  height: 15vh;
+  /* width: 100vw; */
+  /* position: fixed; */
+  bottom: 0;
+  background-color: #f2f5f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
